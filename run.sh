@@ -24,6 +24,7 @@ EOF
 
 install_xcode_cmdline_tools() {
   xcode-select --install
+  read -n 1 -p 'Press [Enter] when install complate.'
 }
 
 install_oh_my_zsh() {
@@ -43,19 +44,58 @@ prepare_folders() {
   mkdir -p ~/workspace/github-self
 }
 
-setup_java() {
+config_git() {
+  cat <<'EOF' > ~/.gitconfig
+[user]
+	name = ld000
+	email = lidong9144@163.com
+[core]
+	editor = vim
+EOF
+}
 
+setup_java() {
+  cat <<'EOF' >> ~/.zshrc
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home 
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH
+EOF
 }
 
 setup_go() {
+  download_url=https://dl.google.com/go/go1.13.3.darwin-amd64.pkg
+  pkg_file=${download_url##*/}
+  curl -LO $download_url
+  sudo installer -pkg $pkg_file -target /
+  rm $pkg_file
 
+  cat <<'EOF' >> ~/.zshrc
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+EOF
+
+  cat <<'EOF' >> ~/.bash_profile
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+EOF
+
+  source ~/.bash_profile
+  mkdir -p $GOPATH
 }
 
 setup_js() {
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+  echo '' >> ~/.zshrc
   echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
   echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm' >> ~/.zshrc
-  source ~/.zshrc
+  echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' >> ~/.zshrc
+  source ~/.bash_profile
 
   nvm install 4
   nvm install 6
@@ -68,8 +108,12 @@ setup_js() {
 }
 
 setup_ssh() {
-  ssh-keygen
+  ssh-keygen -C lidong9144@163.com
   cat ~/.ssh/id_rsa.pub
+}
+
+show_hide_file() {
+  defaults write com.apple.Finder AppleShowAllFiles YES;KillAll Finder
 }
 
 fancy_echo() {
@@ -81,6 +125,7 @@ fancy_echo() {
 
 # run function
 hide_dock_automatically
+show_hide_file
 
 install_xcode_cmdline_tools
 
@@ -92,13 +137,18 @@ setup_homebrew
 bundle_homebrew
 
 # mysql should start on launch
-ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+# ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
-setup_java
 setup_go
 setup_js
+
+config_git
+setup_java
+setup_ssh
 
 # Hold my own hand to make sure I finish configuring.
 echo "Don't forget that you need to:
 1. Add your ssh keys (you put them in your secret hiding place)."
-pause 'Press [Enter] when you have added your ssh key.'
+read -n 1 -p 'Press [Enter] when you have added your ssh key.'
+echo "2. source ~/.zshrc"
+read -n 1 -p 'Press [Enter] when you have execute the command.'

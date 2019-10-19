@@ -1,14 +1,17 @@
-cask_args appdir: '/Applications'
-
-brew 'git'
-brew 'wget'
-brew 'mysql'
-
-cask 'google-chrome'
-cask 'shadowsocksx-ng'
-
-cask 'iterm2'
-cask 'docker'
-cask 'sourcetree'
-
-cask 'visual-studio-code'
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "git"
+brew "mysql"
+brew "wget"
+cask "docker"
+cask "google-chrome"
+cask "intellij-idea"
+cask "istat-menus"
+cask "iterm2"
+cask "oracle-jdk"
+cask "postman"
+cask "sequel-pro"
+cask "shadowsocksx-ng"
+cask "sourcetree"
+cask "visual-studio-code"
