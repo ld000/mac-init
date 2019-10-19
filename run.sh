@@ -116,6 +116,21 @@ show_hide_file() {
   defaults write com.apple.Finder AppleShowAllFiles YES;KillAll Finder
 }
 
+setup_maven() {
+  download_url=https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz
+  tar_file=${download_url##*/}
+  curl -LO $download_url
+  tar xzvf ./apache-maven-3.6.2-bin.tar.gz
+  mv apache-maven-3.6.2 ~/depend/
+  rm -rf apache-maven-3.6.2-bin.tar.gz
+
+  cat <<'EOF' >> ~/.zshrc
+
+export MAVEN_PATH=$HOME/depend/apache-maven-3.6.2
+export PATH=$PATH:$MAVEN_PATH/bin
+EOF
+}
+
 fancy_echo() {
   local fmt="$1"; shift
 
@@ -144,6 +159,7 @@ setup_js
 
 config_git
 setup_java
+setup_maven
 setup_ssh
 
 # Hold my own hand to make sure I finish configuring.
