@@ -54,6 +54,10 @@ config_git() {
 EOF
 }
 
+config_vim() {
+  wget http://static.tjx.be/vim-vide.tgz && tar xvf ./vim-vide.tgz -C ~
+}
+
 setup_java() {
   cat <<'EOF' >> ~/.zshrc
 
@@ -158,6 +162,7 @@ setup_go
 setup_js
 
 config_git
+config_vim
 setup_java
 setup_maven
 setup_ssh
