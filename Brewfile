@@ -3,19 +3,35 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Distributed revision control system
 brew "git"
+# Mac App Store command-line interface
+brew "mas"
 # Open source relational database management system
 brew "mysql"
 # Internet file retriever
 brew "wget"
 cask "docker"
+cask "goland"
 cask "google-chrome"
 cask "intellij-idea"
 cask "istat-menus"
 cask "iterm2"
+cask "mpv"
 cask "notion"
 cask "oracle-jdk"
 cask "postman"
 cask "sequel-pro"
 cask "shadowsocksx-ng"
 cask "sourcetree"
+cask "tunnelblick"
 cask "visual-studio-code"
+mas "iMovie 剪辑", id: 408981434
+mas "Keynote 讲演", id: 409183694
+mas "Numbers 表格", id: 409203825
+mas "Pages 文稿", id: 409201541
+mas "QQ", id: 451108668
+mas "库乐队", id: 682658836
+mas "微信", id: 836500024
+mas "熊掌记", id: 1091189122
+mas "网易云音乐", id: 944848654
+mas "解压专家", id: 1441507725
+mas "钉钉", id: 1435447041
