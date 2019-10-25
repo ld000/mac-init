@@ -24,12 +24,14 @@ cask "sequel-pro"
 cask "shadowsocksx-ng"
 cask "sourcetree"
 cask "tunnelblick"
+cask "typora"
 cask "visual-studio-code"
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
 mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
+mas "Redis Desktop Manager", id: 1475905948
 mas "库乐队", id: 682658836
 mas "微信", id: 836500024
 mas "熊掌记", id: 1091189122
