@@ -81,6 +81,7 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=auto
+export GOPROXY=https://goproxy.cn
 EOF
 
   cat <<'EOF' >> ~/.bash_profile
@@ -89,6 +90,7 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=auto
+export GOPROXY=https://goproxy.cn
 EOF
 
   source ~/.bash_profile
