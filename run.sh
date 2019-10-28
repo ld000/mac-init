@@ -80,6 +80,7 @@ setup_go() {
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GO111MODULE=auto
 EOF
 
   cat <<'EOF' >> ~/.bash_profile
@@ -87,6 +88,7 @@ EOF
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GO111MODULE=auto
 EOF
 
   source ~/.bash_profile
