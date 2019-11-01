@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Friendly powerful distributed version control system
+brew "bazaar"
 # Distributed revision control system
 brew "git"
 # Mac App Store command-line interface
@@ -9,12 +11,15 @@ brew "mas"
 brew "mysql"
 # Internet file retriever
 brew "wget"
+# JavaScript package manager
+brew "yarn"
 cask "docker"
 cask "goland"
 cask "google-chrome"
 cask "intellij-idea"
 cask "istat-menus"
 cask "iterm2"
+cask "mat"
 cask "mpv"
 cask "notion"
 cask "omnigraffle"
