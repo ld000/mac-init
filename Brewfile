@@ -5,6 +5,8 @@ tap "homebrew/core"
 brew "bazaar"
 # Distributed revision control system
 brew "git"
+# Configurable static site generator
+brew "hugo"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
