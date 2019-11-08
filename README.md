@@ -1,12 +1,12 @@
 # mac-init
 initial setup script for my macbook
 
-# How to use
+## How to use
 ```
 ./run.sh
 ```
 
-# dump command
+## Dump Brewfile command
 ```
 brew bundle dump --force --describe
 ```
