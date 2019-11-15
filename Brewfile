@@ -28,10 +28,12 @@ cask "omnigraffle"
 cask "oracle-jdk"
 cask "postman"
 cask "sequel-pro"
-cask "shadowsocksx-ng"
+cask "shadowsocksx-ng-r"
 cask "sourcetree"
 cask "tunnelblick"
 cask "typora"
+cask "v2rayu"
+cask "v2rayx"
 cask "visual-studio-code"
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
