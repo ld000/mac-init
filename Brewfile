@@ -15,6 +15,7 @@ brew "mysql"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+cask "discord"
 cask "docker"
 cask "goland"
 cask "google-chrome"
