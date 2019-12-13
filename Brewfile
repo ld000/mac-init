@@ -46,5 +46,4 @@ mas "Redis Desktop Manager", id: 1475905948
 mas "库乐队", id: 682658836
 mas "微信", id: 836500024
 mas "熊掌记", id: 1091189122
-mas "网易云音乐", id: 944848654
 mas "钉钉", id: 1435447041
