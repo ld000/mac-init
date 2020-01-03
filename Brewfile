@@ -45,6 +45,7 @@ mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
 mas "Redis Desktop Manager", id: 1475905948
+mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
 mas "库乐队", id: 682658836
 mas "微信", id: 836500024
