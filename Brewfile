@@ -13,7 +13,7 @@ brew "lrzsz"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
-brew "mysql@5.7", restart_service: true
+brew "mysql@5.7"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
