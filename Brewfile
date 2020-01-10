@@ -8,10 +8,12 @@ brew "bazaar"
 brew "git"
 # Configurable static site generator
 brew "hugo"
+# Tools for zmodem/xmodem/ymodem file transfer
+brew "lrzsz"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
-brew "mysql@5.7"
+brew "mysql@5.7", restart_service: true
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -24,11 +26,13 @@ cask "google-chrome"
 cask "intellij-idea"
 cask "istat-menus"
 cask "iterm2"
+cask "kitematic"
 cask "mat"
 cask "mpv"
 cask "notion"
 cask "omnigraffle"
 cask "oracle-jdk"
+cask "picgo"
 cask "postman"
 cask "sequel-pro"
 cask "shadowsocksx-ng-r"
