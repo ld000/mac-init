@@ -44,6 +44,7 @@ cask "v2rayx"
 cask "visual-studio-code"
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
+mas "Microsoft Outlook", id: 985367838
 mas "Noted", id: 1446580517
 mas "Numbers 表格", id: 409203825
 mas "Oka解压专家", id: 1441507725
