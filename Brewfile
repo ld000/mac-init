@@ -12,8 +12,12 @@ brew "hugo"
 brew "lrzsz"
 # Mac App Store command-line interface
 brew "mas"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Open source relational database management system
 brew "mysql@5.7"
+# User interface to the TELNET protocol
+brew "telnet"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
