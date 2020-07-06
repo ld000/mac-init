@@ -15,7 +15,7 @@ brew "mas"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
 # Open source relational database management system
-brew "mysql@5.7"
+brew "mysql@5.7", restart_service: true
 # User interface to the TELNET protocol
 brew "telnet"
 # Internet file retriever
@@ -23,6 +23,7 @@ brew "wget"
 # JavaScript package manager
 brew "yarn"
 cask "alfred"
+cask "dash"
 cask "discord"
 cask "docker"
 cask "goland"
@@ -31,6 +32,8 @@ cask "intellij-idea"
 cask "istat-menus"
 cask "iterm2"
 cask "kitematic"
+cask "kubernetic"
+cask "lens"
 cask "mat"
 cask "mpv"
 cask "notion"
@@ -46,6 +49,7 @@ cask "typora"
 cask "v2rayu"
 cask "v2rayx"
 cask "visual-studio-code"
+mas "ChmPages", id: 1164062917
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
 mas "Microsoft Outlook", id: 985367838
