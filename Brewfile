@@ -58,6 +58,7 @@ mas "Numbers 表格", id: 409203825
 mas "Oka解压专家", id: 1441507725
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
+mas "Red", id: 1491764008
 mas "Redis Desktop Manager", id: 1475905948
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
