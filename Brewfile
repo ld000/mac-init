@@ -53,6 +53,7 @@ cask "v2rayu"
 cask "v2rayx"
 cask "visual-studio-code"
 mas "ChmPages", id: 1164062917
+mas "com.echodot.Red", id: 1491764008
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
 mas "Microsoft Outlook", id: 985367838
@@ -60,7 +61,6 @@ mas "Noted", id: 1446580517
 mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
-mas "Red", id: 1491764008
 mas "Redis Desktop Manager", id: 1475905948
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
