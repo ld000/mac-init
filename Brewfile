@@ -17,7 +17,7 @@ brew "openssl@1.1"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: true
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
+brew "python@3.8", link: true
 # User interface to the TELNET protocol
 brew "telnet"
 # Internet file retriever
@@ -64,6 +64,7 @@ mas "QQ", id: 451108668
 mas "Redis Desktop Manager", id: 1475905948
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
+mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
 mas "库乐队", id: 682658836
 mas "微信", id: 836500024
