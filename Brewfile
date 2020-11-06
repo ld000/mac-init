@@ -61,7 +61,7 @@ mas "Noted", id: 1446580517
 mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
-mas "Redis Desktop Manager", id: 1475905948
+mas "RDM - GUI for Redis®", id: 1475905948
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
