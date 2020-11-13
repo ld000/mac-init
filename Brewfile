@@ -17,7 +17,9 @@ brew "openssl@1.1"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: true
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8", link: true
+brew "python@3.8"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # User interface to the TELNET protocol
 brew "telnet"
 # Internet file retriever
