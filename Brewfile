@@ -58,6 +58,7 @@ mas "ChmPages", id: 1164062917
 mas "com.echodot.Red", id: 1491764008
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
+mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Noted", id: 1446580517
 mas "Numbers 表格", id: 409203825
