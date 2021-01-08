@@ -22,6 +22,8 @@ brew "python@3.8"
 brew "python@3.9"
 # User interface to the TELNET protocol
 brew "telnet"
+# Compress/expand executable files
+brew "upx"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
