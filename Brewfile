@@ -28,33 +28,61 @@ brew "upx"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+# Application launcher and productivity software
 cask "alfred"
+# Web debugging Proxy application
 cask "charles"
+# API documentation browser and code snippet manager
 cask "dash"
+# Voice and text chat software
 cask "discord"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Go (golang) IDE
 cask "goland"
-cask "google-chrome"
+# Web browser
+cask "google-chrome", args: { appdir: "/Applications" }
+# Java IDE by JetBrains
 cask "intellij-idea"
+# System monitoring app
 cask "istat-menus"
-cask "iterm2"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2", args: { appdir: "/Applications" }
+# Visual user interface for Docker Container management
 cask "kitematic"
+# Kubernetes desktop client
 cask "kubernetic"
+# Kubernetes IDE
 cask "lens"
+# Java heap analyzer
 cask "mat"
+# Media player based on MPlayer and mplayer2
 cask "mpv"
+# App to write, plan, collaborate, and get organized
 cask "notion"
+# Visual communication software
 cask "omnigraffle"
+# JDK from Oracle
 cask "oracle-jdk"
+# Tool for uploading images
 cask "picgo"
+# Collaboration platform for API development
 cask "postman"
+# MySQL/MariaDB database management platform
 cask "sequel-pro"
+# Next Generation of ShadowsocksX
 cask "shadowsocksx-ng-r"
+# Graphical client for Git version control
 cask "sourcetree"
+# Free and open-source OpenVPN client
 cask "tunnelblick"
+# Configurable document editor that supports Markdown
 cask "typora"
+# Collection of tools to build a dedicated basic communication network
 cask "v2rayu"
+# GUI for v2ray-core
 cask "v2rayx"
+# Open-source code editor
 cask "visual-studio-code"
 mas "ChmPages", id: 1164062917
 mas "com.echodot.Red", id: 1491764008
