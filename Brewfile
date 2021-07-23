@@ -2,6 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Next-generation aircrack with lots of new features
+brew "aircrack-ng"
 # Friendly powerful distributed version control system
 brew "bazaar"
 # Distributed revision control system
@@ -12,8 +16,6 @@ brew "hugo"
 brew "lrzsz"
 # Mac App Store command-line interface
 brew "mas"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: true
 # Interpreted, interactive, object-oriented programming language
