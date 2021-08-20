@@ -17,7 +17,7 @@ brew "lrzsz"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
-brew "mysql@5.7", restart_service: true
+brew "mysql@5.7"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Interpreted, interactive, object-oriented programming language
