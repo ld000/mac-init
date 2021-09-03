@@ -18,10 +18,10 @@ brew "lrzsz"
 brew "mas"
 # Open source relational database management system
 brew "mysql@5.7"
+# Open source computer vision library
+brew "opencv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # User interface to the TELNET protocol
 brew "telnet"
 # Compress/expand executable files
