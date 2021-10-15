@@ -2,12 +2,14 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Next-generation aircrack with lots of new features
 brew "aircrack-ng"
 # Friendly powerful distributed version control system
 brew "bazaar"
+# Optimized BLAS library
+brew "openblas"
+# GNU debugger
+brew "gdb"
 # Distributed revision control system
 brew "git"
 # Configurable static site generator
