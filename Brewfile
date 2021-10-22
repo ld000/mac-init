@@ -8,6 +8,8 @@ brew "aircrack-ng"
 brew "bazaar"
 # Optimized BLAS library
 brew "openblas"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GNU debugger
 brew "gdb"
 # Distributed revision control system
@@ -20,6 +22,8 @@ brew "lrzsz"
 brew "mas"
 # Open source relational database management system
 brew "mysql@5.7"
+# Cross-platform application and UI framework
+brew "qt@5"
 # Open source computer vision library
 brew "opencv"
 # Interpreted, interactive, object-oriented programming language
