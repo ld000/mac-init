@@ -6,6 +6,8 @@ tap "homebrew/services"
 brew "aircrack-ng"
 # Friendly powerful distributed version control system
 brew "bazaar"
+# Generate compilation database for clang tooling
+brew "bear"
 # Optimized BLAS library
 brew "openblas"
 # Play, record, convert, and stream audio and video
