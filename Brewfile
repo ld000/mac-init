@@ -8,8 +8,28 @@ brew "aircrack-ng"
 brew "bazaar"
 # Generate compilation database for clang tooling
 brew "bear"
-# Optimized BLAS library
-brew "openblas"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Core application library for C
+brew "glib"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
+# C++ library for large-scale optimization
+brew "ceres-solver"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# HTTP/2 C Library
+brew "nghttp2"
+# Secure Reliable Transport
+brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GNU debugger
@@ -24,6 +44,8 @@ brew "lrzsz"
 brew "mas"
 # Open source relational database management system
 brew "mysql@5.7"
+# Package for scientific computing with Python
+brew "numpy"
 # Cross-platform application and UI framework
 brew "qt@5"
 # Open source computer vision library
