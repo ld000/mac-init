@@ -56,6 +56,8 @@ brew "openfast"
 brew "python@3.8"
 # User interface to the TELNET protocol
 brew "telnet"
+# Program that allows you to count code, quickly
+brew "tokei"
 # Compress/expand executable files
 brew "upx"
 # Internet file retriever
