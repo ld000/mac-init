@@ -26,8 +26,6 @@ brew "gobject-introspection"
 brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
-# HTTP/2 C Library
-brew "nghttp2"
 # Secure Reliable Transport
 brew "srt"
 # Play, record, convert, and stream audio and video
@@ -44,6 +42,8 @@ brew "lrzsz"
 brew "mas"
 # Open source relational database management system
 brew "mysql@5.7"
+# HTTP/2 C Library
+brew "nghttp2"
 # Package for scientific computing with Python
 brew "numpy"
 # Cross-platform application and UI framework
