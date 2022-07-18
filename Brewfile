@@ -30,6 +30,8 @@ brew "libass"
 brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# GNU compiler collection
+brew "gcc@10"
 # GNU debugger
 brew "gdb"
 # Distributed revision control system
@@ -129,6 +131,7 @@ mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "QQ", id: 451108668
 mas "RESP.app - Developer GUI for Redis®", id: 1475905948
+mas "Sequel Ace", id: 1518036000
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
