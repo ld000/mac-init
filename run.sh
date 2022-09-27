@@ -139,6 +139,11 @@ export PATH=$PATH:$MAVEN_PATH/bin
 EOF
 }
 
+setup_font() {
+  brew tap homebrew/cask-fonts
+  brew install font-fira-code
+}
+
 fancy_echo() {
   local fmt="$1"; shift
 
@@ -170,6 +175,7 @@ config_vim
 setup_java
 setup_maven
 setup_ssh
+setup_font
 
 # Hold my own hand to make sure I finish configuring.
 echo "Don't forget that you need to:
