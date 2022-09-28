@@ -31,6 +31,10 @@ install_oh_my_zsh() {
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
+install_zimfw() {
+  curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+}
+
 setup_homebrew() {
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew update
 }
@@ -158,6 +162,7 @@ show_hide_file
 install_xcode_cmdline_tools
 
 # install_oh_my_zsh
+install_zimfw
 
 prepare_folders
 
@@ -182,4 +187,6 @@ echo "Don't forget that you need to:
 1. Add your ssh keys (you put them in your secret hiding place)."
 read -n 1 -p 'Press [Enter] when you have added your ssh key.'
 echo "2. source ~/.zshrc"
+read -n 1 -p 'Press [Enter] when you have execute the command.'
+echo "3. vim :PluginInstall"
 read -n 1 -p 'Press [Enter] when you have execute the command.'
