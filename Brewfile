@@ -54,8 +54,6 @@ brew "qt@5"
 brew "opencv"
 # NREL-supported OpenFAST whole-turbine simulation code
 brew "openfast"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # User interface to the TELNET protocol
 brew "telnet"
 # Program that allows you to count code, quickly
@@ -135,7 +133,6 @@ mas "Sequel Ace", id: 1518036000
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
-mas "WPS Office", id: 1443749478
 mas "Xcode", id: 497799835
 mas "库乐队", id: 682658836
 mas "微信", id: 836500024
