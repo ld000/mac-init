@@ -157,7 +157,7 @@ show_hide_file
 
 install_xcode_cmdline_tools
 
-install_oh_my_zsh
+# install_oh_my_zsh
 
 prepare_folders
 
@@ -168,7 +168,7 @@ bundle_homebrew
 # ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
 setup_go
-setup_js
+# setup_js
 
 config_git
 config_vim
