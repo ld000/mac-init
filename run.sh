@@ -35,6 +35,25 @@ install_zimfw() {
   curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 }
 
+setup_shell() {
+  brew install zsh
+
+  brew install zsh-autosuggestions
+  cat <<'EOF' >> ~/.zshrc
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+EOF
+
+  brew install starship
+  cat <<'EOF' >> ~/.zshrc
+
+eval "$(starship init zsh)"
+EOF
+  mkdir -p ~/.config && touch ~/.config/starship.toml
+  brew tap homebrew/cask-fonts
+  brew install font-fira-code-nerd-font
+}
+
 setup_homebrew() {
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew update
 }
@@ -44,8 +63,8 @@ bundle_homebrew() {
 }
 
 prepare_folders() {
-  mkdir -p ~/workspace/github
-  mkdir -p ~/workspace/github-self
+  mkdir -p ~/code/github
+  mkdir -p ~/code/github-self
 }
 
 config_git() {
@@ -59,7 +78,12 @@ EOF
 }
 
 config_vim() {
-  wget http://static.tjx.be/vim-vide.tgz && tar xvf ./vim-vide.tgz -C ~
+  mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+  # touch ~/.vimrc
+  copy ./.vimrc ~/.vimrc
+
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 }
 
 setup_java() {
@@ -161,13 +185,14 @@ show_hide_file
 
 install_xcode_cmdline_tools
 
-# install_oh_my_zsh
-install_zimfw
-
 prepare_folders
 
 setup_homebrew
 bundle_homebrew
+
+# install_oh_my_zsh
+# install_zimfw
+setup_shell
 
 # mysql should start on launch
 # ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
@@ -180,7 +205,7 @@ config_vim
 setup_java
 setup_maven
 setup_ssh
-setup_font
+# setup_font
 
 # Hold my own hand to make sure I finish configuring.
 echo "Don't forget that you need to:
@@ -189,4 +214,6 @@ read -n 1 -p 'Press [Enter] when you have added your ssh key.'
 echo "2. source ~/.zshrc"
 read -n 1 -p 'Press [Enter] when you have execute the command.'
 echo "3. vim :PluginInstall"
+read -n 1 -p 'Press [Enter] when you have execute the command.'
+echo "4. iterm2: Preferences>Profiles>Text>Non-ASCII Font is the same as your main Font(fira code)"
 read -n 1 -p 'Press [Enter] when you have execute the command.'
