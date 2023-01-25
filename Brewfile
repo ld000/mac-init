@@ -1,21 +1,26 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 # Next-generation aircrack with lots of new features
 brew "aircrack-ng"
 # Friendly powerful distributed version control system
 brew "bazaar"
+# Next generation open source RPC library and framework
+brew "grpc"
 # Generate compilation database for clang tooling
 brew "bear"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Rich and complete approach to parallelism in C++
 brew "tbb"
 # C++ library for large-scale optimization
 brew "ceres-solver"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
@@ -28,14 +33,26 @@ brew "harfbuzz"
 brew "libass"
 # Secure Reliable Transport
 brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg@4"
 # GNU compiler collection
 brew "gcc@10"
 # GNU debugger
 brew "gdb"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # Distributed revision control system
 brew "git"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
 # Configurable static site generator
 brew "hugo"
 # Tools for zmodem/xmodem/ymodem file transfer
@@ -54,6 +71,10 @@ brew "qt@5"
 brew "opencv"
 # NREL-supported OpenFAST whole-turbine simulation code
 brew "openfast"
+# Python interface to Tcl/Tk
+brew "python-tk@3.10"
+# Cross-shell prompt for astronauts
+brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
 # Program that allows you to count code, quickly
@@ -64,6 +85,8 @@ brew "upx"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
 # Application launcher and productivity software
 cask "alfred"
 # Web debugging Proxy application
@@ -72,6 +95,8 @@ cask "charles"
 cask "dash"
 # Voice and text chat software
 cask "discord"
+# Developer targeted fonts with a high number of glyphs
+cask "font-fira-code-nerd-font"
 # Go (golang) IDE
 cask "goland"
 # Web browser
