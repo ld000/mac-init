@@ -25,10 +25,10 @@ brew "p11-kit"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Secure Reliable Transport
@@ -36,7 +36,7 @@ brew "srt"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
-brew "ffmpeg"
+brew "ffmpeg", link: false
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@4"
 # GNU compiler collection
@@ -64,9 +64,7 @@ brew "mysql@5.7"
 # HTTP/2 C Library
 brew "nghttp2"
 # Package for scientific computing with Python
-brew "numpy"
-# Cross-platform application and UI framework
-brew "qt@5"
+brew "numpy", link: false
 # Open source computer vision library
 brew "opencv"
 # NREL-supported OpenFAST whole-turbine simulation code
