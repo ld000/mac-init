@@ -164,7 +164,6 @@ mas "钉钉", id: 1435447041
 vscode "arcticicestudio.nord-visual-studio-code"
 vscode "be5invis.toml"
 vscode "bradlc.vscode-tailwindcss"
-vscode "bungcip.better-toml"
 vscode "dbaeumer.vscode-eslint"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
