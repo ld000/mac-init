@@ -109,9 +109,7 @@ cask "kubernetic"
 # Kubernetes IDE
 cask "lens"
 # Java heap analyzer
-cask "mat"
-# Media player based on MPlayer and mplayer2
-cask "mpv"
+cask "memoryanalyzer"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Visual communication software
@@ -128,6 +126,8 @@ cask "sequel-pro"
 cask "shadowsocksx-ng-r"
 # Graphical client for Git version control
 cask "sourcetree"
+# Media player based on MPlayer and mplayer2
+cask "stolendata-mpv"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Configurable document editor that supports Markdown
@@ -204,6 +204,7 @@ vscode "rust-lang.rust"
 vscode "rust-lang.rust-analyzer"
 vscode "rvest.vs-code-prettier-eslint"
 vscode "serayuzgur.crates"
+vscode "simonsiefke.svg-preview"
 vscode "sleistner.vscode-fileutils"
 vscode "stylelint.vscode-stylelint"
 vscode "swellaby.vscode-rust-test-adapter"
